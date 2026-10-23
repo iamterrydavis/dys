@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dystopia's Stock — Premium Robux Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar" role="navigation">
+        <div class="nav-inner">
+            <a href="#" class="brand" aria-label="Dystopia's Stock home" data-nav="home">
+                <img src="/assets/logo.png" alt="Dystopia's Stock" class="logo-img" />
+            </a>
+            <nav class="nav-links">
+                <a href="#" data-nav="home" class="active">Home</a>
+                <a href="#" data-nav="buy">Buy Robux</a>
+                <a href="#" data-nav="pricing">Pricing</a>
+                <a href="#" data-nav="faq">FAQ</a>
+                <a href="#" data-nav="contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://discord.gg/UYV6YJCeet" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Join Discord</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#" data-nav="home" class="active">Home</a>
+            <a href="#" data-nav="buy">Buy Robux</a>
+            <a href="#" data-nav="pricing">Pricing</a>
+            <a href="#" data-nav="faq">FAQ</a>
+            <a href="#" data-nav="contact">Contact</a>
+            <a href="https://discord.gg/UYV6YJCeet" target="_blank" rel="noopener" style="color:var(--neon);font-weight:600;">Join Discord →</a>
+        </div>
+    </header>
+
+    <!-- ===== PAGE: HOME ===== -->
+    <section class="page-section active" id="page-home">
+        <div class="hero" id="home">
+            <div class="hero-bg"><div class="grid"></div><div class="glow"></div></div>
+            <div class="stock-chart" aria-hidden="true">
+                <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
+                    <defs><linearGradient id="chart-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#39ff14" stop-opacity="0.35" /><stop offset="100%" stop-color="#39ff14" stop-opacity="0" /></linearGradient></defs>
+                    <path class="area" d="M0,240 L80,220 L160,235 L240,190 L320,205 L400,165 L480,180 L560,140 L640,155 L720,115 L800,130 L880,90 L960,105 L1040,70 L1120,85 L1200,50 L1200,300 L0,300 Z" />
+                    <path class="line" d="M0,240 L80,220 L160,235 L240,190 L320,205 L400,165 L480,180 L560,140 L640,155 L720,115 L800,130 L880,90 L960,105 L1040,70 L1120,85 L1200,50" />
+                </svg>
+            </div>
+            <div class="hero-content">
+                <div class="hero-pills">
+                    <span class="pill green"><span class="dot"></span> Live stock — instant delivery</span>
+                    <span class="pill">⭐ 2,000+ Vouches</span>
+                </div>
+                <div class="hero-logo"><img src="/assets/logo.png" alt="Dystopia's Stock" class="hero-logo-img" /></div>
+                <h1>The Premium <br /><span class="highlight">Robux Marketplace</span></h1>
+                <p class="sub">Flat-rate Robux at <b>$2.50 / 1,000</b>. Crypto and PayPal accepted. Orders fulfilled directly through our Discord.</p>
+                <div class="hero-actions">
+                    <a href="#" data-nav="buy" class="btn btn-primary btn-lg">Buy Robux Now <span style="transition:transform 0.2s;display:inline-block;">→</span></a>
+                    <a href="#" data-nav="pricing" class="btn btn-secondary btn-lg">See Pricing</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="number">$2.50</span><span class="label">Per 1K</span></div>
+                    <div class="stat"><span class="number">2K+</span><span class="label">Vouches</span></div>
+                    <div class="stat"><span class="number">&lt;5m</span><span class="label">Delivery</span></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container text-center">
+                <p class="section-label">Accepted Payments</p>
+                <h2 class="section-title">Pay your way</h2>
+                <div class="payments-grid">
+                    <div class="payment-item"><img src="/assets/bitcoin.png" alt="Bitcoin" class="pm-icon" />Bitcoin</div>
+                    <div class="payment-item"><img src="/assets/etherium.png" alt="Ethereum" class="pm-icon" />Ethereum</div>
+                    <div class="payment-item"><img src="/assets/litecoin.png" alt="Litecoin" class="pm-icon" />Litecoin</div>
+                    <div class="payment-item"><img src="/assets/monero.png" alt="Monero" class="pm-icon" />Monero</div>
+                    <div class="payment-item"><img src="/assets/visa.png" alt="Visa" class="pm-icon" />Visa</div>
+                    <div class="payment-item"><img src="/assets/mastercard.png" alt="Mastercard" class="pm-icon" />Mastercard</div>
+                    <div class="payment-item"><img src="/assets/paypal.png" alt="PayPal" class="pm-icon" />PayPal</div>
+                    <div class="payment-item">
+                        <svg class="pm-icon" viewBox="0 0 24 24" fill="#8A8A8A"><path d="M12 2C6.477 2 2 6.477 2 12s5.477 10 10 10 10-5.477 10-10S18.627 0 12 0zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm1-13h-2v6h6v-2h-4V7z"/><circle cx="12" cy="12" r="2" fill="#8A8A8A"/></svg>
+                        All Chains
+                    </div>
+                </div>
+                <p class="payment-note">All payments processed securely via Discord ticket system.</p>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="features">
+            <div class="container text-center">
+                <p class="section-label">Why Dystopia's Stock</p>
+                <h2 class="section-title">Built for serious buyers</h2>
+                <p class="section-sub">We don't cut corners. Fast, reliable, and backed by a community that trusts us.</p>
+                <div class="features-grid">
+                    <div class="feature-card"><span class="icon">⚡</span><h3>Instant Delivery</h3><p>Robux drops in your account within minutes of payment confirmation.</p></div>
+                    <div class="feature-card"><span class="icon">🛡️</span><h3>Trusted Seller</h3><p>Hundreds of completed orders. Reputation backed by our community.</p></div>
+                    <div class="feature-card"><span class="icon">💰</span><h3>Best Rates</h3><p>Flat $2.50 per 1,000 Robux. No hidden fees, no inflated pricing.</p></div>
+                    <div class="feature-card"><span class="icon">💬</span><h3>24/7 Support</h3><p>Reach us anytime on Discord — real humans, fast replies.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-block">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Ready to stock up?</h2>
+                    <p>Hop into the Discord, drop your order, get your Robux. It's that simple.</p>
+                    <a href="#" data-nav="buy" class="btn btn-primary btn-lg">Buy Robux Now →</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- ===== PAGE: BUY ROBUX ===== -->
+    <section class="page-section" id="page-buy">
+        <div class="section" style="padding-top:120px;">
+            <div class="container" style="max-width:820px;">
+                <div class="text-center">
+                    <p class="section-label">Purchase</p>
+                    <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.4rem);">Buy Robux</h1>
+                    <p class="section-sub" id="stepIndicator" style="color:var(--neon);font-weight:600;">Step 1 of 5 — Select Amount</p>
+                </div>
+
+                <!-- STEP 1 -->
+                <div class="buy-step" id="step1">
+                    <div class="glass" style="padding:32px;border-radius:var(--radius);">
+                        <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:4px;">How many Robux?</h3>
+                        <p style="color:var(--muted-foreground);margin-bottom:20px;font-size:0.9rem;">Minimum: 1,000 Robux ($2.50)</p>
+                        <div class="slider-container">
+                            <div class="slider-header">
+                                <span style="font-size:0.85rem;color:var(--muted-foreground);">Robux</span>
+                                <span class="slider-value" id="sliderDisplay">1,000</span>
+                            </div>
+                            <input type="range" id="robuxSlider" min="1000" max="100000" step="1000" value="1000" />
+                            <div class="slider-ticks"><span>1K</span><span>25K</span><span>50K</span><span>75K</span><span>100K</span></div>
+                        </div>
+                        <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px;">
+                            <button class="btn btn-secondary btn-sm quick-btn" data-amount="1000">1K</button>
+                            <button class="btn btn-secondary btn-sm quick-btn" data-amount="2500">2.5K</button>
+                            <button class="btn btn-secondary btn-sm quick-btn" data-amount="5000">5K</button>
+                            <button class="btn btn-secondary btn-sm quick-btn" data-amount="10000">10K</button>
+                            <button class="btn btn-secondary btn-sm quick-btn" data-amount="25000">25K</button>
+                            <button class="btn btn-secondary btn-sm quick-btn" data-amount="50000">50K</button>
+                        </div>
+                        <div style="margin-top:24px;padding:20px;background:rgba(57,255,20,0.05);border-radius:12px;border:1px solid rgba(57,255,20,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                            <div>
+                                <p style="font-size:0.8rem;color:var(--muted-foreground);">Total</p>
+                                <p style="font-size:1.8rem;font-weight:800;color:var(--neon);" id="totalPrice">$2.50</p>
+                            </div>
+                            <button class="btn btn-primary" id="step1Continue">Continue →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="buy-step" id="step2" style="display:none;">
+                    <div class="glass" style="padding:32px;border-radius:var(--radius);">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;flex-wrap:wrap;gap:8px;">
+                            <h3 style="font-size:1.2rem;font-weight:700;">Enter your Roblox username</h3>
+                            <span style="color:var(--neon);font-weight:700;font-size:0.95rem;" id="step2Amount">1,000 Robux</span>
+                        </div>
+                        <p style="color:var(--muted-foreground);margin-bottom:20px;font-size:0.9rem;">We need your Roblox username to deliver your Robux.</p>
+                        <input type="text" id="robloxUsername" placeholder="e.g. Builder_Boy123" style="width:100%;padding:14px 16px;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:8px;color:#fff;font-size:1.1rem;transition:border-color 0.2s;">
+                        <div style="margin-top:20px;display:flex;gap:12px;">
+                            <button class="btn btn-secondary" id="step2Back">← Back</button>
+                            <button class="btn btn-primary" id="step2Continue" style="flex:1;">Continue →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="buy-step" id="step3" style="display:none;">
+                    <div class="glass" style="padding:32px;border-radius:var(--radius);">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;flex-wrap:wrap;gap:8px;">
+                            <h3 style="font-size:1.2rem;font-weight:700;">Choose payment method</h3>
+                            <span style="color:var(--neon);font-weight:700;font-size:0.95rem;" id="step3Amount">1,000 Robux</span>
+                        </div>
+                        <p style="color:var(--muted-foreground);margin-bottom:20px;font-size:0.9rem;"><span id="step3User" style="color:#fff;">Username</span> · Total: $<span id="step3Price">2.50</span></p>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;">
+                            <button class="payment-method-btn" data-method="card" style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:12px;transition:all 0.3s;cursor:pointer;text-align:center;">
+                                <div style="font-size:2rem;margin-bottom:6px;">💳</div>
+                                <div style="font-weight:600;">Card / PayPal</div>
+                                <div style="font-size:0.75rem;color:var(--muted-foreground);">Visa · Mastercard · PayPal</div>
+                            </button>
+                            <button class="payment-method-btn" data-method="crypto" style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:12px;transition:all 0.3s;cursor:pointer;text-align:center;">
+                                <div style="font-size:2rem;margin-bottom:6px;">🪙</div>
+                                <div style="font-weight:600;">Cryptocurrency</div>
+                                <div style="font-size:0.75rem;color:var(--muted-foreground);">BTC · ETH · LTC · XMR</div>
+                            </button>
+                        </div>
+                        <div style="display:flex;gap:12px;"><button class="btn btn-secondary" id="step3Back">← Back</button></div>
+                    </div>
+                </div>
+
+                <!-- STEP 4: CARD -->
+                <div class="buy-step" id="step4-card" style="display:none;">
+                    <div class="glass" style="padding:32px;border-radius:var(--radius);">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;flex-wrap:wrap;gap:8px;">
+                            <h3 style="font-size:1.2rem;font-weight:700;">Card / PayPal Payment</h3>
+                            <span style="color:var(--neon);font-weight:700;font-size:0.95rem;" id="step4AmountDisplay">1,000 Robux</span>
+                        </div>
+                        <p style="color:var(--muted-foreground);margin-bottom:20px;font-size:0.9rem;"><span id="step4User" style="color:#fff;">Username</span> · Total: $<span id="step4Price">2.50</span></p>
+                        <p style="font-size:0.85rem;color:var(--muted-foreground);margin-bottom:12px;">Choose how you'd like to pay:</p>
+                        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px;">
+                            <button class="card-option-btn" data-option="ticket" style="padding:20px;background:rgba(57,255,20,0.04);border:1px solid rgba(57,255,20,0.15);border-radius:12px;transition:all 0.3s;cursor:pointer;text-align:left;display:flex;align-items:center;gap:16px;">
+                                <div style="font-size:2rem;flex-shrink:0;">💬</div>
+                                <div style="flex:1;"><div style="font-weight:700;font-size:1rem;margin-bottom:2px;">Pay in a Discord ticket</div><div style="font-size:0.8rem;color:var(--muted-foreground);">Less fees · Direct support · Fastest confirmation</div></div>
+                                <div style="color:var(--neon);font-size:1.2rem;">→</div>
+                            </button>
+                            <button class="card-option-btn" data-option="voucher" style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:12px;transition:all 0.3s;cursor:pointer;text-align:left;display:flex;align-items:center;gap:16px;">
+                                <div style="font-size:2rem;flex-shrink:0;">🎟️</div>
+                                <div style="flex:1;"><div style="font-weight:700;font-size:1rem;margin-bottom:2px;">Pay with a voucher</div><div style="font-size:0.8rem;color:var(--muted-foreground);">Buy Rewarble PayPal voucher · Enter code</div></div>
+                                <div style="color:var(--neon);font-size:1.2rem;">→</div>
+                            </button>
+                        </div>
+                        <div style="display:flex;gap:12px;"><button class="btn btn-secondary" id="step4Back">← Back</button></div>
+                    </div>
+                </div>
+
+                <!-- STEP 5: VOUCHER -->
+                <div class="buy-step" id="step5-voucher" style="display:none;">
+                    <div class="glass" style="padding:32px;border-radius:var(--radius);">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;flex-wrap:wrap;gap:8px;">
+                            <h3 style="font-size:1.2rem;font-weight:700;">🎟️ Pay with Voucher</h3>
+                            <span style="color:var(--neon);font-weight:700;font-size:0.95rem;" id="step5Amount">1,000 Robux</span>
+                        </div>
+                        <p style="color:var(--muted-foreground);margin-bottom:20px;font-size:0.9rem;"><span id="step5User" style="color:#fff;">Username</span> · Total: $<span id="step5Price">2.50</span></p>
+                        <p style="font-size:0.85rem;color:var(--muted-foreground);margin-bottom:12px;">Purchase the following voucher(s):</p>
+                        <div id="voucherList" style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;"></div>
+                        <div style="padding:12px 16px;background:rgba(57,255,20,0.06);border-radius:8px;border:1px solid rgba(57,255,20,0.15);margin-bottom:20px;">
+                            <p style="color:#8a8a8a;font-size:0.8rem;text-align:center;">💡 Buy the voucher(s), then paste the code(s) below. We'll redeem them for you.</p>
+                        </div>
+                        <label style="color:#fbfbfb;font-size:0.85rem;font-weight:500;display:block;margin-bottom:6px;">Voucher code(s)</label>
+                        <textarea id="voucherCode" rows="4" placeholder="Paste your voucher code(s) here — one per line" style="width:100%;padding:14px 16px;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:8px;color:#fff;font-size:0.95rem;font-family:monospace;resize:vertical;transition:border-color 0.2s;"></textarea>
+                        <div id="voucherError" style="display:none;margin-top:12px;padding:12px;background:rgba(255,50,50,0.06);border-radius:8px;border:1px solid rgba(255,50,50,0.1);color:#ff6b6b;font-size:0.9rem;"></div>
+                        <div style="margin-top:20px;display:flex;gap:12px;">
+                            <button class="btn btn-secondary" id="step5Back">← Back</button>
+                            <button class="btn btn-primary" id="step5Submit" style="flex:1;">Submit Voucher →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VOUCHER SUCCESS -->
+                <div class="buy-step" id="step-voucher-success" style="display:none;">
+                    <div class="glass" style="padding:32px;border-radius:var(--radius);text-align:center;border-color:rgba(57,255,20,0.2);">
+                        <div style="font-size:3.5rem;margin-bottom:12px;">✅</div>
+                        <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:6px;color:var(--neon);">Voucher Submitted!</h3>
+                        <p style="color:var(--muted-foreground);margin-bottom:16px;font-size:0.95rem;">We've received your voucher code(s). Your Robux will be delivered shortly.</p>
+                        <p style="color:var(--muted-foreground);margin-bottom:20px;font-size:0.9rem;">Need help? Open a ticket in our Discord with your Roblox username.</p>
+                        <a href="https://discord.gg/UYV6YJCeet" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;">Join Discord →</a>
+                        <button class="btn btn-secondary" style="width:100%;margin-top:12px;" id="resetBuySuccess">Start Over</button>
+                    </div>
+                </div>
+
+                <!-- STEP 4: CRYPTO -->
+                <div class="buy-step" id="step4-crypto" style="display:none;">
+                    <div class="glass" style="padding:32px;border-radius:var(--radius);">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;flex-wrap:wrap;gap:8px;">
+                            <h3 style="font-size:1.2rem;font-weight:700;">Pay with Crypto</h3>
+                            <span style="color:var(--neon);font-weight:700;font-size:0.95rem;" id="step4CryptoAmount">1,000 Robux</span>
+                        </div>
+                        <p style="color:var(--muted-foreground);margin-bottom:16px;font-size:0.9rem;"><span id="step4CryptoUser" style="color:#fff;">Username</span> · $<span id="step4CryptoPrice">2.50</span></p>
+                        <p style="font-size:0.8rem;color:var(--muted-foreground);margin-bottom:12px;">Select your cryptocurrency</p>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;">
+                            <button class="crypto-select-btn" data-coin="bitcoin" style="padding:14px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;transition:all 0.3s;cursor:pointer;text-align:center;">
+                                <img src="/assets/bitcoin.png" alt="Bitcoin" style="width:28px;height:28px;margin:0 auto 4px;" /><div style="font-weight:500;font-size:0.85rem;">Bitcoin</div>
+                            </button>
+                            <button class="crypto-select-btn" data-coin="ethereum" style="padding:14px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;transition:all 0.3s;cursor:pointer;text-align:center;">
+                                <img src="/assets/etherium.png" alt="Ethereum" style="width:28px;height:28px;margin:0 auto 4px;" /><div style="font-weight:500;font-size:0.85rem;">Ethereum</div>
+                            </button>
+                            <button class="crypto-select-btn" data-coin="litecoin" style="padding:14px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;transition:all 0.3s;cursor:pointer;text-align:center;">
+                                <img src="/assets/litecoin.png" alt="Litecoin" style="width:28px;height:28px;margin:0 auto 4px;" /><div style="font-weight:500;font-size:0.85rem;">Litecoin</div>
+                            </button>
+                            <button class="crypto-select-btn" data-coin="monero" style="padding:14px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;transition:all 0.3s;cursor:pointer;text-align:center;">
+                                <img src="/assets/monero.png" alt="Monero" style="width:28px;height:28px;margin:0 auto 4px;" /><div style="font-weight:500;font-size:0.85rem;">Monero</div>
+                            </button>
+                        </div>
+                        <div id="cryptoPaymentDetails" style="display:none;">
+                            <div style="padding:16px;background:rgba(57,255,20,0.04);border-radius:10px;border:1px solid rgba(57,255,20,0.1);margin-bottom:16px;">
+                                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+                                    <div>
+                                        <p style="font-size:0.75rem;color:var(--muted-foreground);">Send exactly</p>
+                                        <p style="font-size:1.4rem;font-weight:700;color:var(--neon);"><span id="cryptoAmount">0.000000</span> <span id="cryptoSymbol">BTC</span></p>
+                                    </div>
+                                    <div style="text-align:right;">
+                                        <p style="font-size:0.75rem;color:var(--muted-foreground);">Time remaining</p>
+                                        <p style="font-size:1.4rem;font-weight:700;color:#fff;" id="timerDisplay">15:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%;height:3px;background:rgba(255,255,255,0.08);border-radius:4px;margin-bottom:16px;overflow:hidden;">
+                                <div id="timerProgress" style="width:100%;height:100%;background:var(--neon);transition:width 1s linear;"></div>
+                            </div>
+                            <div style="padding:16px;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border);margin-bottom:16px;">
+                                <p style="font-size:0.75rem;color:var(--muted-foreground);margin-bottom:4px;">Send to this address</p>
+                                <p style="font-size:0.85rem;word-break:break-all;font-family:monospace;color:#fff;" id="cryptoAddress">Address will appear here</p>
+                                <button class="btn btn-secondary btn-sm" style="margin-top:8px;" id="copyAddress">📋 Copy Address</button>
+                            </div>
+                            <div style="padding:12px 16px;background:rgba(255,50,50,0.06);border-radius:8px;border:1px solid rgba(255,50,50,0.1);">
+                                <p style="color:#ff6b6b;font-size:0.8rem;text-align:center;">⚠️ Send the <strong>exact</strong> amount. If you send a different amount, open a ticket in Discord.</p>
+                            </div>
+                        </div>
+                        <div style="display:flex;gap:12px;margin-top:16px;"><button class="btn btn-secondary" id="step4CryptoBack">← Back</button></div>
+                    </div>
+                </div>
+
+                <!-- TIMER EXPIRED -->
+                <div class="buy-step" id="step-timer-expired" style="display:none;">
+                    <div class="glass" style="padding:32px;border-radius:var(--radius);text-align:center;border-color:rgba(255,50,50,0.2);">
+                        <div style="font-size:3.5rem;margin-bottom:12px;">⏰</div>
+                        <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:6px;color:#ff6b6b;">Payment Time Expired</h3>
+                        <p style="color:var(--muted-foreground);margin-bottom:16px;font-size:0.95rem;">The 15-minute window to complete your payment has expired.</p>
+                        <p style="color:var(--muted-foreground);margin-bottom:20px;font-size:0.9rem;">If you already sent the payment, please <strong style="color:#fff;">open a ticket in our Discord</strong> with your transaction details.</p>
+                        <a href="https://discord.gg/UYV6YJCeet" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;">Open Discord Ticket →</a>
+                        <button class="btn btn-secondary" style="width:100%;margin-top:12px;" id="resetBuy">Start Over</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAGE: PRICING ===== -->
+    <section class="page-section" id="page-pricing">
+        <div class="section" style="padding-top:120px;">
+            <div class="container text-center">
+                <p class="section-label">Pricing</p>
+                <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.4rem);">One flat rate. <span class="text-neon">$2.50 / 1K.</span></h1>
+                <p class="section-sub">No tiered scams. No inflated fees. Pay only what the Robux costs — and get it instantly.</p>
+                <div class="pricing-showcase">
+                    <div class="pricing-card">
+                        <div class="amount">1,000</div>
+                        <div class="price">$2.50</div>
+                        <div class="desc">Perfect for a starter boost.</div>
+                        <ul class="perks">
+                            <li><span class="check">✓</span> Instant Discord checkout</li>
+                            <li><span class="check">✓</span> Crypto &amp; PayPal accepted</li>
+                            <li><span class="check">✓</span> Trusted seller — verified history</li>
+                        </ul>
+                        <a href="#" data-nav="buy" class="btn btn-secondary" style="margin-top:18px;width:100%;">Buy Now</a>
+                    </div>
+                    <div class="pricing-card popular">
+                        <div class="amount">5,000</div>
+                        <div class="price">$12.50</div>
+                        <div class="desc">Our most popular pack.</div>
+                        <ul class="perks">
+                            <li><span class="check">✓</span> Instant Discord checkout</li>
+                            <li><span class="check">✓</span> Crypto &amp; PayPal accepted</li>
+                            <li><span class="check">✓</span> Live order tracking</li>
+                            <li><span class="check">✓</span> Trusted seller — verified history</li>
+                        </ul>
+                        <a href="#" data-nav="buy" class="btn btn-primary" style="margin-top:18px;width:100%;">Buy Now</a>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="amount">10,000</div>
+                        <div class="price">$25.00</div>
+                        <div class="desc">Serious stock for serious players.</div>
+                        <ul class="perks">
+                            <li><span class="check">✓</span> Instant Discord checkout</li>
+                            <li><span class="check">✓</span> Crypto &amp; PayPal accepted</li>
+                            <li><span class="check">✓</span> Trusted seller — verified history</li>
+                        </ul>
+                        <a href="#" data-nav="buy" class="btn btn-secondary" style="margin-top:18px;width:100%;">Buy Now</a>
+                    </div>
+                </div>
+                <div class="glass" style="max-width:600px;margin:40px auto 0;padding:24px;border-radius:var(--radius);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;">
+                    <div style="text-align:left;">
+                        <h3 style="font-weight:600;font-size:1.1rem;">Custom order?</h3>
+                        <p style="color:var(--muted-foreground);font-size:0.9rem;">Need 25K, 100K, or something specific? DM us on Discord.</p>
+                    </div>
+                    <a href="https://discord.gg/UYV6YJCeet" target="_blank" rel="noopener" class="btn btn-primary" style="flex-shrink:0;">Request a Quote</a>
+                </div>
+                <div style="margin-top:60px;">
+                    <p class="section-label">Accepted Payments</p>
+                    <div class="payments-grid" style="max-width:600px;">
+                        <div class="payment-item"><img src="/assets/bitcoin.png" alt="Bitcoin" class="pm-icon" /> Bitcoin</div>
+                        <div class="payment-item"><img src="/assets/etherium.png" alt="Ethereum" class="pm-icon" /> Ethereum</div>
+                        <div class="payment-item"><img src="/assets/litecoin.png" alt="Litecoin" class="pm-icon" /> Litecoin</div>
+                        <div class="payment-item"><img src="/assets/monero.png" alt="Monero" class="pm-icon" /> Monero</div>
+                        <div class="payment-item"><img src="/assets/paypal.png" alt="PayPal" class="pm-icon" /> PayPal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAGE: FAQ ===== -->
+    <section class="page-section" id="page-faq">
+        <div class="section" style="padding-top:120px;">
+            <div class="container" style="max-width:720px;">
+                <div class="text-center">
+                    <p class="section-label">FAQ</p>
+                    <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.4rem);">Questions, answered.</h1>
+                </div>
+                <div class="glass" style="padding:8px 16px;border-radius:var(--radius);margin-top:32px;">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-trigger open">How do I buy Robux?<span class="arrow">▾</span></button>
+                            <div class="accordion-content open">Use our <a href="#" data-nav="buy">Buy Robux</a> page. Select your amount, enter your Roblox username, then choose Card/PayPal or Crypto. For card payments, you can pay in a Discord ticket or use a voucher. For crypto, you'll get the wallet address and exact amount to send.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">How long does delivery take?<span class="arrow">▾</span></button>
+                            <div class="accordion-content">Most orders are delivered within 5 minutes of payment confirmation. Larger custom orders may take a little longer — we'll always give you an ETA.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">What payment methods do you accept?<span class="arrow">▾</span></button>
+                            <div class="accordion-content">Bitcoin, Ethereum, Litecoin, Monero, PayPal, and Rewarble PayPal vouchers. Crypto is preferred and processed fastest.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">Is PayPal accepted?<span class="arrow">▾</span></button>
+                            <div class="accordion-content">Yes — PayPal is fully supported. Goods &amp; Services is available for buyer protection.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">What is your refund policy?<span class="arrow">▾</span></button>
+                            <div class="accordion-content">Refunds are available if we cannot fulfill your order or if there is a verifiable issue on our end. Contact us through Discord and we'll resolve it — every case is reviewed individually.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">Is this legit?<span class="arrow">▾</span></button>
+                            <div class="accordion-content">Yes. We've completed hundreds of orders with a public reputation in our Discord. We're not affiliated with Roblox Corporation.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top:32px;">
+                    <p style="color:var(--muted-foreground);">Still have questions?</p>
+                    <a href="https://discord.gg/UYV6YJCeet" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:12px;">Ask us on Discord</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAGE: CONTACT ===== -->
+    <section class="page-section" id="page-contact">
+        <div class="section" style="padding-top:120px;">
+            <div class="container" style="max-width:820px;">
+                <div class="text-center">
+                    <p class="section-label">Contact</p>
+                    <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.4rem);">Talk to us directly.</h1>
+                    <p class="section-sub">We don't hide behind email forms. Reach us where we actually live.</p>
+                </div>
+                <div class="contact-grid">
+                    <a href="https://discord.gg/UYV6YJCeet" target="_blank" rel="noopener" class="contact-card">
+                        <div class="icon-wrap">💬</div>
+                        <h3>Discord</h3>
+                        <div class="handle">discord.gg/UYV6YJCeet</div>
+                        <p class="desc">Primary channel. Place orders, ask questions, get support 24/7.</p>
+                        <span class="cta-label">Join Server →</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@dystopias.xyz" target="_blank" rel="noopener" class="contact-card">
+                        <div class="icon-wrap">🎵</div>
+                        <h3>TikTok</h3>
+                        <div class="handle">@dystopias.xyz</div>
+                        <p class="desc">Follow for drops, reviews, and live stock updates.</p>
+                        <span class="cta-label">Follow →</span>
+                    </a>
+                </div>
+                <div class="refund-box">
+                    <h3>Refund policy</h3>
+                    <p>Refunds are available on a case-by-case basis when we cannot fulfill your order or there's a verified issue on our end. Open a Discord ticket and we'll handle it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="brand-small">
+                <img src="/assets/logo.png" alt="Dystopia's Stock" class="footer-logo-img" />
+                <span class="dot"></span>
+                <span style="font-weight:400;color:#5a5a5a;">Premium Robux Marketplace</span>
+            </div>
+            <p>© 2026 Dystopia's Stock. All rights reserved. — Not affiliated with Roblox Corporation.</p>
+            <p style="margin-top:6px;font-size:0.75rem;color:#5a5a5a;">Support: <a href="mailto:support@dystopias.xyz" style="color:var(--neon);text-decoration:none;">support@dystopias.xyz</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
