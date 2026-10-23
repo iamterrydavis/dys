@@ -1,0 +1,25 @@
+{
+  "name": "dystopias-stock",
+  "version": "1.0.0",
+  "description": "Dystopia's Stock - Premium Robux Marketplace",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "dev": "nodemon api/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "bcryptjs": "^2.4.3",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^6.10.0",
+    "express-validator": "^7.0.1",
+    "ua-parser-js": "^1.0.37",
+    "geoip-lite": "^1.4.7",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
